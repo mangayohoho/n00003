@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>僕のヒーローアカデミア</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="robots" content="nofollow,noindex,noarchive" />
+        <link rel="stylesheet" href="/css/n00001.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/search.css">
+        <script src="/js/search.js"></script>
+        <script src="/js/data.js"></script>
+        <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" href="/favicon/favicon.ico">
+    </head>
+    <body>
+        <header class="header">
+            <div class="titleBox">
+                <div class="menuBox" id="menuL">
+                    <a class="menu" href="/menu/request"><i class="fa-solid fa-question"></i> Request</a>
+                </div>
+                <div class="menuBox">
+                    <a class="menu" href="/menu/new"><i class="fa-solid fa-fire"></i> New</a>
+                </div>
+                <div class="icon">
+                    <img class="iconImg" src="/favicon/logo_transparent.png" onclick="location.href = '/index';">
+                </div>
+                <div class="menuBox">
+                    <a class="menu" href="/menu/all"><i class="fa-solid fa-book"></i> All</a>
+                </div>
+    
+                <div class="menuBox" id="menuR">
+                    <a class="menu" href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';document.querySelector('.num').style.display = 'none';"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                </div>
+    
+                <div class="hamberger"><a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'block';" class="hamber"><i class="fa-solid fa-bars"></i></a>
+                </div>
+             </div>
+          </header>
+    
+          <div id="hambergerMenu">
+            <div>
+              <a href="javascript:void(0)" onclick="getElementById('hambergerMenu').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div><a href="/menu/new"><i class="fa-solid fa-fire"></i> New</a></div>
+            <div><a href="/menu/all"><i class="fa-solid fa-book"></i> All</a></div>
+            <div><a href="/menu/request"><i class="fa-solid fa-question"></i> Request</a></div>
+            <div><a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'block';"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+          </div>
+          <div id="searchBox">
+            <a href="javascript:void(0)" onclick="getElementById('searchBox').style.display = 'none';"><i class="fa-solid fa-xmark"></i></a>
+            <div>
+                <input onkeyup="search(this.value)" size="15" autocomplete="off" placeholder="検索ワード" required/>
+                <span id="inputWord"></span><span id="resultCount"></span>
+                <div id="result"></div>
+            </div>
+          </div>
+        
+        <div class="indexBox">
+            <div class="imgBox">
+                <img src="/n00021/n00021-h.webp" class="img">
+            </div>
+            <div class="bookTitleBox">
+                <a class="bookTitle">チェンソーマン</a>
+            </div>
+            <div class="statementBox">
+                <a class="statement">多くの人間が“個性”という力を持つ。だが、それは必ずしも正義の為の力ではない。しかし、避けられぬ悪が存在する様に、そこには必ず我らヒーローがいる！　ん？　私が誰かって？　HA―HA―HA―HA―HA！　さぁ、始まるぞ少年！　君だけの夢に突き進め！“PlusUltra”!!</a>
+            </div>
+            <div class="bookBox">
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-100.html">第100話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-99.html">第99話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-98.html">第98話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-97.html">第97話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-96.html">第96話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-95.html">第95話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-94.html">第94話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-93.html">第93話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-92.html">第92話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-91.html">第91話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-90.html">第90話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-89.html">第89話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-88.html">第88話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-87.html">第87話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-86.html">第86話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-85.html">第85話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-84.html">第84話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-83.html">第83話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-82.html">第82話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-81.html">第81話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-80.html">第80話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-79.html">第79話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-78.html">第78話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-77.html">第77話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-76.html">第76話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-75.html">第75話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-74.html">第74話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-73.html">第73話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-72.html">第72話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-71.html">第71話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-70.html">第70話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-69.html">第69話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-68.html">第68話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-67.html">第67話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-66.html">第66話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-65.html">第65話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-64.html">第64話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-63.html">第63話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-62.html">第62話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-61.html">第61話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-60.html">第60話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-59.html">第59話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-58.html">第58話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-57.html">第57話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-56.html">第56話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-55.html">第55話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-54.html">第54話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-53.html">第53話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-52.html">第52話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-51.html">第51話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-50.html">第50話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-49.html">第49話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-48.html">第48話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-47.html">第47話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-46.html">第46話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-45.html">第45話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-44.html">第44話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-43.html">第43話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-42.html">第42話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-41.html">第41話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-40.html">第40話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-39.html">第39話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-38.html">第38話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-37.html">第37話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-36.html">第36話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-35.html">第35話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-34.html">第34話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-33.html">第33話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-32.html">第32話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-31.html">第31話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-30.html">第30話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-29.html">第29話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-28.html">第28話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-27.html">第27話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-26.html">第26話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-25.html">第25話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-24.html">第24話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-23.html">第23話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-22.html">第22話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-21.html">第21話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-20.html">第20話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-19.html">第19話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-18.html">第18話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-17.html">第17話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-16.html">第16話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-15.html">第15話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-14.html">第14話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-13.html">第13話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-12.html">第12話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-11.html">第11話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-10.html">第10話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-9.html">第9話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-8.html">第8話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-7.html">第7話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-6.html">第6話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-5.html">第5話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-4.html">第4話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-3.html">第3話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-2.html">第2話</a>
+                </div>
+                <div class="booklist" id="booklist">
+                    <a class="book" href="n00003-1.html">第1話</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
